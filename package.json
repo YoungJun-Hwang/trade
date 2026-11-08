@@ -1,0 +1,10 @@
+{
+  "name": "tradepilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "무역 실무 통합 도우미 — HS 분류, 절차·인증, 바이어 발굴, 비용 계산, 서류 생성, 통관·물류·결제",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8080"
+  }
+}

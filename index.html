@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TradePilot 무역 실무 도우미</title>
+<meta name="description" content="품목 HS코드 분류, 품목별 수출입 절차와 국가별 인증, 해외 바이어 발굴, 수출 견적·수입 원가 계산, 무역서류(P/I·C/I·P/L·S/R) 자동 생성, 통관·물류·결제 관리를 한 곳에서.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">TP</div><div><b>TradePilot</b><small>무역 실무 도우미</small></div></div>
+    <nav class="nav" id="nav" aria-label="메뉴"></nav>
+    <div class="side-foot">
+      세율·인증·운임 데이터는 <b>참고용</b>입니다. 실제 진행 전 관세사·인증기관·포워더에 확인하세요.<br>
+      입력한 정보는 이 브라우저에만 저장됩니다.
+    </div>
+  </aside>
+  <main>
+    <div class="ctx-bar" id="ctx"></div>
+    <div id="view"></div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- 엑셀 출력용 SheetJS 0.18.5 (Apache-2.0, 저장소에 포함). 없으면 CSV로 저장합니다. -->
+<script src="assets/vendor/xlsx.full.min.js" defer></script>
+<script src="js/core.js"></script>
+<script src="js/data/categories.js"></script>
+<script src="js/data/hs.js"></script>
+<script src="js/data/countries.js"></script>
+<script src="js/data/logistics.js"></script>
+<script src="js/data/buyers.js"></script>
+<script src="js/engine/hs.js"></script>
+<script src="js/engine/cost.js"></script>
+<script src="js/engine/compliance.js"></script>
+<script src="js/engine/finance.js"></script>
+<script src="js/engine/tracking.js"></script>
+<script src="js/engine/documents.js"></script>
+<script src="js/engine/buyers.js"></script>
+<script src="js/api/clients.js"></script>
+<script src="js/ui/app.js"></script>
+</body>
+</html>
