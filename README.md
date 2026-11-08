@@ -3,6 +3,10 @@
 품목을 입력하면 **HS코드 → 품목별 절차 → 국가별 인증 → 법규 체크 → 바이어 발굴 → 비용 계산 → 서류 생성 → 통관·물류·결제 관리**까지 이어지는 웹 프로그램입니다.
 빌드 없이 `index.html`을 열면 바로 동작하며, GitHub Pages로 배포할 수 있습니다.
 
+## 접속
+
+https://youngjun-hwang.github.io/trade/ (GitHub Pages, 푸시하면 `.github/workflows/pages.yml`이 테스트 후 자동 배포)
+
 ## 실행
 
 ```bash
